@@ -14,9 +14,6 @@ function homepage() {
         <div class="enter name">
             <input type="text" name="name" id="name" placeholder="Enter your name" required>
         </div>
-        <select class="sel" name="age" id="age" required>
-            <option value>Select Birth Year</option>
-        </select>
         <div class="next">
             <button>Next</button>
         </div>
@@ -24,19 +21,13 @@ function homepage() {
     <script src="script.js"></script>`
     console.log(body.innerHTML);
     let cont = document.querySelector(".homepage");
-    let sel = cont.querySelector("select");
-    for (let i = 1900; i < new Date().getFullYear(); i++) {
-        let x = `<option>${i}</option>`;
-        sel.innerHTML += x;
-    }
     const name = document.getElementById("name").nodeValue
     let btn = document.querySelector(".next button");
     btn.addEventListener("click", () => {
         const name = document.getElementById("name").value.trim();
-        const year = document.getElementById("age").value;
 
-        if (!name || !year) {
-            alert("Please fill in all fields.");
+        if (!name) {
+            alert("Please tell you name 😒.");
             return;
         }
 
