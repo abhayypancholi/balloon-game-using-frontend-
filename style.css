@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    background-image: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: center;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    justify-content: center;
+    background-color: rgba(23, 23, 23, 0.29);
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    font-family: "Google Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 20px;
+
+}
+
+.name {
+    font-size: 30px;
+}
+
+.enter {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sel {
+    font-size: 15px;
+    border-radius: 5px;
+    width: 40vh;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+    text-align: center;
+}
+
+.enter input {
+    padding: 0px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    width: 40vh;
+    height: 4vh;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    color: black;
+}
+
+#name::placeholder {
+    text-align: center;
+    color: black;
+    font-style: italic;
+    opacity: 1;
+    font-size: 16px;
+}
+
+#age {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.next button {
+
+    border: none;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 8px 20px;
+    cursor: pointer;
+    background-color: rgb(127, 255, 212);
+    color: rgb(0, 0, 0);
+}
+
+.balloon {
+    position: absolute;
+    bottom: -13vmax;
+}
+
+.gamepage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    cursor: url("cursor.svg"), auto;
+}
+
+.hiscore {
+    text-align: center;
+    border-radius: 5px;
+    padding: 2px 10px;
+    font-size: 20px;
+    justify-self: end;
+    align-self: end;
+}
+
+.balloon svg {
+    height: 12vmax;
+    width: 10vmax;
+    fill: green;
+}
+
+.nav {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: azure;
+}
+
+.timer {
+    font-size: 20px;
+}
+.gamepage h1{
+    font-size: 45px;
+}
+@media (max-width: 630px) {
+    .timer {
+        font-size: 18px;
+    }
+    .hiscore {
+        text-align: center;
+        border-radius: 5px;
+        padding: 2px 10px;
+        font-size: 15px;
+        justify-self: center;
+        align-self: center;
+    }
+    .nav {
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+    .gamepage img {
+        width: 50px;
+    }
+
+    .hiscore {
+        font-size: 18px;
+    }
+
+    .name {
+        font-size: 18px;
+    }
+
+    .sel {
+        width: 200px;
+    }
+
+    .enter input {
+        width: 200px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h3{
+        font-size: 15px;
+    }
+}
